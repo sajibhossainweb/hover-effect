@@ -1,0 +1,303 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.png');
+    background-size: cover;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+    display:  inline-block;
+}
+.hover {
+    width: 400px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* ================ hover one ==================== */
+.one a{
+    width: 150px;
+    height: 50px;
+    background: rgb(248, 250, 246);
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+.one a::after{
+    content: '';
+    width: 100%;
+    height:0%;
+    background: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.one a:hover::after{
+    height: 100%;
+    left: 0%;
+}
+/* ------------------------------- */
+/* ================ hover two ==================== */
+.two a{
+    width: 150px;
+    height: 50px;
+    background: rgb(123, 47, 255);
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e7e3e3;
+    position: relative;
+    z-index: 1;
+    transition: all linear .3s;
+}
+.two a:hover{
+    color: #000;
+}
+.two a::after{
+    content: '';
+    width:0%;
+    height:100%;
+    background: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.two a:hover::after{
+    width: 50%;
+    left: 0%;
+}
+.two a::before{
+    content: '';
+    width:0%;
+    height:100%;
+    background: gold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.two a:hover::before{
+    width: 50%;
+    right: 0;
+}
+/* ------------------------------- */
+/* ================ hover three ==================== */
+.three a{
+    width: 150px;
+    height: 50px;
+    background: greenyellow;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+.three a::after{
+    content: '';
+    width: 0%;
+    height:0%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all linear .3s;
+}
+.three a:hover::after{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+}
+/* ------------------------------- */
+/* ================ hover four ==================== */
+.four a{
+    width: 150px;
+    height: 50px;
+    background: rgb(47, 255, 92);
+    border: 1px solid #000000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+.four a::after{
+    content: '';
+    width: 100%;
+    height:0%;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background: rgb(255, 94, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.four a:hover::after{
+    height: 100%;
+    left: 0%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/* ------------------------------- */
+/* ================ hover five ==================== */
+.five a{
+    width: 150px;
+    height: 50px;
+    background: rgb(168, 47, 255);
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+.five a::after{
+    content: '';
+    width: 100%;
+    height:0%;
+    background: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.five a:hover::after{
+    height: 50%;
+    left: 0%;
+}
+.five a::before{
+    content: '';
+    width: 100%;
+    height:0%;
+    background: gold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.five a:hover::before{
+    height: 50%;
+    left: 0%;
+}
+/* ------------------------------- */
+/* =========== hover six =============== */
+.six a{
+    width: 150px;
+    height: 50px;
+    background: rgb(46, 211, 240);
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+.six a::after{
+    content: '';
+    width: 0%;
+    height:0%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all linear .3s;
+}
+.six a:hover::after{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+}
+.six a::before{
+    content: '';
+    width: 0%;
+    height:0%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    transition: all linear .3s;
+}
+.six a:hover::before{
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+/* ----------------------------------- */
+/* ================ hover one ==================== */
+.seven a{
+    width: 150px;
+    height: 50px;
+    background: rgb(248, 250, 246);
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+.seven a::after{
+    content: '';
+    width: 50%;
+    height:0%;
+    background: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.seven a:hover::after{
+    height: 100%;
+    left: 0%;
+}
+.seven a::before{
+    content: '';
+    width: 50%;
+    height:0%;
+    background: gold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.seven a:hover::before{
+    height: 100%;
+    right: 0%;
+}
+/* ------------------------------- */
